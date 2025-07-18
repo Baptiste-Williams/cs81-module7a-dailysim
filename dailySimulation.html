@@ -34,6 +34,15 @@
   setTimeout(() => {
     output.innerHTML += "<p>Evening coding session 💻</p>";
   }, 11000);
+
+  const moods = ["😴", "😎", "🤯", "😂", "😡", "😇"];
+const randomMood = moods[Math.floor(Math.random() * moods.length)];
+const randomDelay = Math.floor(Math.random() * 4000) + 2000;
+
+setTimeout(() => {
+  output.innerHTML += `<p>Surprise mood shift: ${randomMood}</p>`;
+}, randomDelay);
+
 </script>
 
 </body>
